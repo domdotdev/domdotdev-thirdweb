@@ -3,22 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./header.css" />
+    <title>Darwin Melendres</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <header class="header">
       <div class="header-title">
         <h1>DARWIN</h1>
       </div>
-      <div class="header-options">
-        <button>Explore</button>
-        <button>Solutions</button>
-        <button>Plans</button>
-        <button>Developers</button>
-        <button>Log in</button>
-        <button class="get-started">Get Started</button>
-      </div>
+      <!---->
+      <nav class="nav" id="nav-menu">
+        <i data-feather="x" class="close" id="close-menu"></i>
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="" class="nav_link">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="" class="nav_link">About</a>
+          </li>
+          <li class="nav_item">
+            <a href="" class="nav_link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <i data-feather="menu" class="toggle" id="toggle-menu"></i>
     </header>
     <main class="main">
       <p class="main-title">
@@ -27,5 +36,9 @@
       <p class="main-content">save time and get more done</p>
       <button class="main-start-today">start today</button>
     </main>
+    <script>
+      feather.replace();
+    </script>
+    <script src="./nav.js"></script>
   </body>
 </html>
